@@ -1,5 +1,7 @@
 import CategoriesScreen from '@/page/CategoriesScreen';
+import ContactScreen from '@/page/ContactScreen';
 import ProductDetailScreen from '@/page/ProductDetailScreen';
+import { notFound } from 'next/navigation';
 import React from 'react'
 
 type Props = {
@@ -13,10 +15,7 @@ export default async function page({ params }: Props) {
 
     if (path == 'collections') return <CategoriesScreen />
     if (path == `product/${productSlug}`) return <ProductDetailScreen productId={Number(productSlug)} />
+    if (path == 'contact') return <ContactScreen />
 
-    return (
-        <div>
-            <p>{path}</p>
-        </div>
-    )
+    return notFound()
 }
