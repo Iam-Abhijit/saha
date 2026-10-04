@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 type Props = {
     className?: string;
@@ -7,7 +8,7 @@ type Props = {
 
 export default function Logo({ className = "", mode = 'light' }: Props) {
     return (
-        <div className={`flex items-center font-header gap-3 ${className}`}>
+        <Link href="/" className={`flex items-center font-header gap-3 ${className}`}>
             {/* Flower Icon SVG */}
             <div className="text-secondary shrink-0">
                 <img src="/images/logo.png" alt="Flower" className="w-10 h-10" />
@@ -21,6 +22,6 @@ export default function Logo({ className = "", mode = 'light' }: Props) {
                     Tradition Meets Style
                 </span>
             </div>
-        </div>
+        </Link>
     );
 }
