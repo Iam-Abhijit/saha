@@ -191,7 +191,7 @@ function CategoriesContent() {
                         </div>
 
                         {/* Product Grid - First Half */}
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-10">
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
                             {firstHalf.map((product) => (
                                 <ProductCard key={product.id} product={product} />
                             ))}
@@ -215,7 +215,7 @@ function CategoriesContent() {
 
                         {/* Product Grid - Second Half */}
                         {secondHalf.length > 0 && (
-                            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                                 {secondHalf.map((product) => (
                                     <ProductCard key={product.id} product={product} />
                                 ))}
