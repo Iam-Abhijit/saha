@@ -2,15 +2,15 @@ import React from 'react';
 import Link from 'next/link';
 import { getProductDetail, getRelatedProducts } from '@/data/productDetails';
 import Breadcrumb from '@/components/ui/Breadcrumb';
-import ProductGallery from '@/components/product/ProductGallery';
-import ProductInfo from '@/components/product/ProductInfo';
-import ProductTabs from '@/components/product/ProductTabs';
-import ProductOverview from '@/components/product/ProductOverview';
-import ProductSpecifications from '@/components/product/ProductSpecifications';
-import CareInstructions from '@/components/product/CareInstructions';
-import RelatedProducts from '@/components/product/RelatedProducts';
-import CustomerReviews from '@/components/product/CustomerReviews';
-import ServiceStrip from '@/components/product/ServiceStrip';
+import ProductGallery from '@/components/page/product/ProductGallery';
+import ProductInfo from '@/components/page/product/ProductInfo';
+import ProductTabs from '@/components/page/product/ProductTabs';
+import ProductOverview from '@/components/page/product/ProductOverview';
+import ProductSpecifications from '@/components/page/product/ProductSpecifications';
+import CareInstructions from '@/components/page/product/CareInstructions';
+import RelatedProducts from '@/components/page/product/RelatedProducts';
+import CustomerReviews from '@/components/page/product/CustomerReviews';
+import ServiceStrip from '@/components/page/product/ServiceStrip';
 
 type Props = {
     productId: number;

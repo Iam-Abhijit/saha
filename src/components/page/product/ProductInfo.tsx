@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { FaRegHeart, FaHeart, FaCodeCompare, FaShareNodes, FaCartShopping, FaBolt, FaFire, FaCheck } from 'react-icons/fa6';
 import type { ProductDetail } from '@/data/productDetails';
 import StarRating from '@/components/ui/StarRating';
-import ProductBadge from '@/components/collections/ProductBadge';
+import ProductBadge from '@/components/page/collections/ProductBadge';
 import ColorSelector from './ColorSelector';
 import QuantitySelector from './QuantitySelector';
 import TrustBadges from './TrustBadges';
@@ -29,7 +29,7 @@ export default function ProductInfo({ product }: Props) {
     const handleShare = async () => {
         const url = window.location.href;
         if (navigator.share) {
-            await navigator.share({ title: product.name, url }).catch(() => {});
+            await navigator.share({ title: product.name, url }).catch(() => { });
         } else {
             await navigator.clipboard.writeText(url);
         }

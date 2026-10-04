@@ -6,9 +6,10 @@ import { useSearchParams } from 'next/navigation';
 import { FaAngleRight, FaChevronDown, FaTruck, FaShieldHalved, FaTag, FaHeadset, FaArrowRightLong, FaFilter } from 'react-icons/fa6';
 
 import { categories, products } from '@/data/mockData';
-import ProductCard from '@/components/collections/ProductCard';
-import CollectionSidebar from '@/components/collections/CollectionSidebar';
-import CategoryStrip from '@/components/collections/CategoryStrip';
+import ProductCard from '@/components/page/collections/ProductCard';
+import CollectionSidebar from '@/components/page/collections/CollectionSidebar';
+import CategoryStrip from '@/components/page/collections/CategoryStrip';
+import LatestArrivalsSection from '@/components/page/home/LatestArrivalsSection';
 
 function CategoriesContent() {
     const searchParams = useSearchParams();
@@ -267,6 +268,9 @@ function CategoriesContent() {
                     </div>
                 </div>
             </div>
+
+            {/* New Arrivals Section */}
+            <LatestArrivalsSection />
 
             {/* Bottom Features Banner */}
             <div className="bg-primary/5 py-12 border-y border-border">

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa6';
-import ProductCard, { type Product } from '@/components/collections/ProductCard';
+import ProductCard, { type Product } from '@/components/page/collections/ProductCard';
 import SectionTitle from '@/components/ui/SectionTitle';
 
 type Props = {

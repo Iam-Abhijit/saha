@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { FaPhone, FaEnvelope, FaLocationDot, FaWhatsapp, FaGem, FaTruckFast, FaHeadset, FaPaperPlane, FaPlus, FaMinus } from 'react-icons/fa6';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import SectionTitle from '@/components/ui/SectionTitle';
-import ServiceStrip from '@/components/product/ServiceStrip';
+import ServiceStrip from '@/components/page/product/ServiceStrip';
 
 const contactInfo = [
     { icon: FaPhone, title: 'Phone', desc: '+91 98765 43210\nMon - Sat, 9AM - 8PM' },

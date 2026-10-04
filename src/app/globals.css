@@ -44,7 +44,7 @@
   --font-header: var(--font-montserrat);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -68,7 +68,7 @@
     --input: #27272a;
     --ring: #dc2626;
   }
-}
+} */
 
 body {
   margin: 0;

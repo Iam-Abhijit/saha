@@ -18,7 +18,7 @@ export default function LatestArrivalsSection() {
         <section className="py-20 md:py-28 bg-muted relative overflow-hidden">
             <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
                 <div className="flex flex-col md:flex-row gap-12 lg:gap-16 items-center">
-                    
+
                     {/* Left Text Content */}
                     <div className="w-full md:w-1/3 flex flex-col items-start justify-center text-left">
                         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/10 text-secondary text-xs font-bold tracking-widest uppercase mb-6 border border-secondary/20 shadow-sm">
@@ -50,14 +50,14 @@ export default function LatestArrivalsSection() {
                         >
                             {latestArrivals.map((item) => (
                                 <SwiperSlide key={item.id} className="w-65! md:w-75!">
-                                    <Link href="/products" className="group relative block w-full aspect-3/4 bg-background border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
-                                        <img 
-                                            src={item.img} 
-                                            alt={item.name} 
-                                            className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700 ease-in-out" 
+                                    <Link href={`/product/${item.id}`} className="group relative block w-full aspect-3/4 bg-background border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
+                                        <img
+                                            src={item.img}
+                                            alt={item.name}
+                                            className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700 ease-in-out"
                                         />
                                         <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
-                                        
+
                                         {/* Item Details */}
                                         <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-3 group-hover:translate-y-0 transition-transform duration-500 ease-out">
                                             <h3 className="text-white font-header font-bold text-xl mb-1.5">{item.name}</h3>
@@ -76,7 +76,7 @@ export default function LatestArrivalsSection() {
 
                 </div>
             </div>
-            
+
             {/* Decorative background element */}
             <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-200 h-200 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
         </section>

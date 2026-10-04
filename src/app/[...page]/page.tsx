@@ -1,3 +1,4 @@
+import CommingSoon from '@/components/layout/CommingSoon';
 import CategoriesScreen from '@/page/CategoriesScreen';
 import ContactScreen from '@/page/ContactScreen';
 import ProductDetailScreen from '@/page/ProductDetailScreen';
@@ -16,6 +17,11 @@ export default async function page({ params }: Props) {
     if (path == 'collections') return <CategoriesScreen />
     if (path == `product/${productSlug}`) return <ProductDetailScreen productId={Number(productSlug)} />
     if (path == 'contact') return <ContactScreen />
+    // soom pages
+    if (path == 'about') return <CommingSoon />
+    if (path == 'wishlist') return <CommingSoon />
+    if (path == 'account') return <CommingSoon />
+    if (path == 'store') return <CommingSoon />
 
     return notFound()
 }
